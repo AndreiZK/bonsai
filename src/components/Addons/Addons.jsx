@@ -20,6 +20,7 @@ const Addons = () => {
                     title={'Collaborators'}
                     description={'lorem ipsum dolor sit amet'}
                     price='10'
+                    hasAdditionalInfo
                 />
             </div>
         </div>
