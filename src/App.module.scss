@@ -1,0 +1,19 @@
+.app {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &::after {
+        content: '';
+        height: 1500px;
+        width: 1000px;
+        background-color: rgb(177, 241, 250);
+        position: absolute;
+        top: -700px;
+        right: -400px;
+        transform: rotate(62deg);
+        z-index: 0;
+        opacity: 0.2;
+    }
+
+}

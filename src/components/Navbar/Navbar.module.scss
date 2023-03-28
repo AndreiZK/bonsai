@@ -1,0 +1,40 @@
+@import '../../vars.scss';
+
+
+.container {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 1em;
+    font-family: $font-sans;
+    z-index: 1;
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5em;
+        color: $gray;
+        font-weight: 600;
+        z-index: 1;
+    }
+    img {
+        width: 13%;
+    }
+    i {
+        font-size: 0.6em;
+        margin-left: 0.8em;
+    }
+    .buttonsContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .nestedContainer {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

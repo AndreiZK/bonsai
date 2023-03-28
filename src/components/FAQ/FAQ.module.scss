@@ -1,0 +1,14 @@
+@import '../../vars.scss';
+
+.container {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10rem;
+    width: 40%;
+    font-family: $font-sans;
+    h2 {
+        color: $green;
+        font-size: 2em;
+        margin-bottom: 3rem;
+    }
+}

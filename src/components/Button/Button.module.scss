@@ -1,0 +1,44 @@
+@import '../../vars.scss';
+
+@mixin button-size($fsize, $pos, $width) {
+    font-size: $fsize;
+    margin: $pos;
+    width: $width;
+}
+
+.button {
+    border-radius: 0.4em;
+    padding: 1em 3em;
+    font-size: 0.7em;
+    color: white;
+    background-color: $green;
+    font-weight: 900;
+    margin-left: 2em;
+    z-index: 1;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: darken($color: $green, $amount: 3);
+    }
+
+    &.empty {
+        color: $green;
+        background-color: white;
+        border: 1px solid $green;
+        background-color: transparent;
+
+        &:hover {
+            color: darken($color: $green, $amount: 7);
+        }
+    }
+    cursor: pointer;
+    border: none;
+
+    &.big {
+        @include button-size(1.2rem, auto, 100%)
+    }
+
+    &.medium {
+        @include button-size(1.5em, none, auto) 
+    }
+}

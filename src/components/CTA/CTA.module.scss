@@ -1,0 +1,23 @@
+@import '../../vars.scss';
+
+.container {
+    margin: auto;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(243, 251, 254);
+    padding: 6rem 4rem;
+    margin-bottom: 10rem;
+    border-radius: 0.5rem;
+    color: $gray;
+    h2 {
+        font-family: $font-serif;
+        font-size: 2.5em;
+        line-height: 4rem;
+        font-weight: 600;
+        span {
+            color: $green;
+        }
+    }
+}
